@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: a relational PostgreSQL database built from eight Home Credit source files.">
+  <link rel="canonical" href="https://1fiocco.github.io/projects/home-credit/">
+  <meta property="og:title" content="Home Credit Relational Database | Riccardo Pugliese">
+  <meta property="og:description" content="Case study: a relational PostgreSQL database built from eight Home Credit source files.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://1fiocco.github.io/projects/home-credit/">
+  <meta property="og:image" content="https://1fiocco.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home Credit Relational Database | Riccardo Pugliese">
+  <meta name="twitter:description" content="Case study: a relational PostgreSQL database built from eight Home Credit source files.">
+  <meta name="twitter:image" content="https://1fiocco.github.io/og.png">
+  <title>Home Credit Relational Database | Riccardo Pugliese</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head><body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner"><a class="wordmark" href="../../">Riccardo Pugliese</a><nav class="desktop-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a></nav><a class="header-cta" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a class="mobile-menu-cv" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a></nav></details></div></header>
+  <main id="main" class="case-study-page">
+    <section class="page-hero case-study-hero"><div class="shell"><p class="eyebrow"><span></span> Case study</p><div class="page-title-grid"><div><p class="case-study-category">Data Engineering</p><h1>Home Credit Relational Database</h1></div><p>Built a relational PostgreSQL database from eight Home Credit source files, with a unified parent table, a chunked loader and analytical SQL.</p></div></div></section>
+    <div class="case-study-body"><div class="shell">
+      <section class="case-study-section" aria-labelledby="home-credit-problem"><p class="section-number">01 / PROBLEM</p><div><h2 id="home-credit-problem">Problem</h2><p>How can eight Home Credit source files be organised as a relational PostgreSQL database that supports analytical SQL and query-performance analysis?</p></div></section>
+      <section class="case-study-section" aria-labelledby="home-credit-data"><p class="section-number">02 / DATA</p><div><h2 id="home-credit-data">Data</h2><p>The database was built from eight Home Credit source files. A unified parent table connected the source structure.</p></div></section>
+      <section class="case-study-section" aria-labelledby="home-credit-approach"><p class="section-number">03 / TECHNICAL APPROACH</p><div><h2 id="home-credit-approach">Technical approach</h2><p>Primary- and foreign-key relationships defined the relational structure. A chunked loader built with Python, PyArrow and SQLAlchemy handled data loading into PostgreSQL.</p></div></section>
+      <section class="case-study-section" aria-labelledby="home-credit-results"><p class="section-number">04 / MAIN RESULTS</p><div><h2 id="home-credit-results">Main results</h2><p>The project produced ten analytical SQL queries. Query performance was analysed with indexes and <code>EXPLAIN (ANALYZE, BUFFERS)</code>. The work focused on database design and SQL analysis rather than predictive modelling.</p></div></section>
+      <section class="case-study-section" aria-labelledby="home-credit-tech"><p class="section-number">05 / TECHNOLOGIES</p><div><h2 id="home-credit-tech">Technologies</h2><ul class="case-tech-list"><li>PostgreSQL</li><li>SQL</li><li>Python</li><li>pandas</li><li>PyArrow</li><li>SQLAlchemy</li><li>pgAdmin</li></ul></div></section>
+      <section class="case-study-section" aria-labelledby="home-credit-type"><p class="section-number">06 / PROJECT TYPE</p><div><h2 id="home-credit-type">Project type</h2><p class="project-type">Collaborative academic project</p></div></section>
+    </div></div>
+    <section class="case-study-actions"><div class="shell"><a class="button button-acid" href="https://github.com/1fiocco/Data-Management-for-Data-Science" target="_blank" rel="noreferrer noopener" aria-label="Open the Home Credit Relational Database repository on GitHub">GitHub repository <span aria-hidden="true">↗</span></a><a class="text-link light-link" href="../"><span aria-hidden="true">←</span> Back to all projects</a></div></section>
+  </main>
+  <footer><div class="shell footer-inner"><div><strong>Riccardo Pugliese</strong><span>Data Science · Data Management</span></div><nav aria-label="Footer navigation"><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a href="https://github.com/1fiocco" target="_blank" rel="noreferrer noopener">GitHub</a><a href="https://www.linkedin.com/in/riccardo-pugliese-9594b8298/" target="_blank" rel="noreferrer noopener">LinkedIn</a></nav><span>© 2026</span></div></footer>
+</body></html>
