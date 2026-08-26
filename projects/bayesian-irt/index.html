@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: Bayesian Rasch/1PL and 2PL models for Grade 10 INVALSI Italian-test data.">
+  <link rel="canonical" href="https://1fiocco.github.io/projects/bayesian-irt/">
+  <meta property="og:title" content="Bayesian Item Response Theory | Riccardo Pugliese">
+  <meta property="og:description" content="Case study: Bayesian Rasch/1PL and 2PL models for Grade 10 INVALSI Italian-test data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://1fiocco.github.io/projects/bayesian-irt/">
+  <meta property="og:image" content="https://1fiocco.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bayesian Item Response Theory | Riccardo Pugliese">
+  <meta name="twitter:description" content="Case study: Bayesian Rasch/1PL and 2PL models for Grade 10 INVALSI Italian-test data.">
+  <meta name="twitter:image" content="https://1fiocco.github.io/og.png">
+  <title>Bayesian Item Response Theory | Riccardo Pugliese</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head><body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner"><a class="wordmark" href="../../">Riccardo Pugliese</a><nav class="desktop-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a></nav><a class="header-cta" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a class="mobile-menu-cv" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a></nav></details></div></header>
+  <main id="main" class="case-study-page">
+    <section class="page-hero case-study-hero"><div class="shell"><p class="eyebrow"><span></span> Case study</p><div class="page-title-grid"><div><p class="case-study-category">Bayesian Modelling</p><h1>Bayesian Item Response Theory</h1></div><p>Analysed Grade 10 INVALSI Italian-test data with Bayesian Rasch/1PL and 2PL models, comparing fit and ability estimates.</p></div></div></section>
+    <div class="case-study-body"><div class="shell">
+      <section class="case-study-section" aria-labelledby="irt-problem"><p class="section-number">01 / RESEARCH QUESTION</p><div><h2 id="irt-problem">Research question</h2><p>How do Bayesian Rasch/1PL and 2PL models compare when applied to Grade 10 INVALSI Italian-test data?</p></div></section>
+      <section class="case-study-section" aria-labelledby="irt-data"><p class="section-number">02 / DATA</p><div><h2 id="irt-data">Data</h2><p>The analysis used Grade 10 INVALSI Italian-test data from approximately 3,500 students across 49 items.</p></div></section>
+      <section class="case-study-section" aria-labelledby="irt-approach"><p class="section-number">03 / TECHNICAL APPROACH</p><div><h2 id="irt-approach">Technical approach</h2><p>Bayesian Rasch/1PL and 2PL Item Response Theory models were implemented in R with JAGS and rjags.</p></div></section>
+      <figure class="case-visual" aria-labelledby="irt-visual-title" aria-describedby="irt-visual-description irt-visual-caption">
+        <div class="case-visual-heading"><div><p class="case-visual-kicker">Model comparison</p><h3 id="irt-visual-title">Rasch/1PL versus 2PL</h3></div><p class="case-visual-description" id="irt-visual-description">The comparison combines the verified sample size, exact log-loss values and agreement between estimated abilities and official WLE scores.</p></div>
+        <div class="irt-sample" aria-label="Dataset summary"><div><strong>≈3,500</strong><span>Students</span></div><div><strong>49</strong><span>Items</span></div></div>
+        <div class="irt-comparison">
+          <article class="irt-model"><h4>Rasch / 1PL</h4><dl><div><dt>Log loss</dt><dd><strong>0.527</strong></dd></div></dl></article>
+          <article class="irt-model irt-model--highlight"><h4>2PL</h4><dl><div><dt>Log loss</dt><dd><strong>0.518</strong> · lower</dd></div><div><dt>Other fit criteria</dt><dd>AIC · BIC · DIC improved</dd></div></dl></article>
+        </div>
+        <div class="irt-correlation"><span>Ability estimates compared with official WLE scores</span><strong>r = 0.990</strong></div>
+        <figcaption id="irt-visual-caption">The 2PL model improved fit, while estimated abilities aligned very closely with official WLE scores.</figcaption>
+      </figure>
+      <section class="case-study-section" aria-labelledby="irt-results"><p class="section-number">04 / MAIN RESULTS</p><div><h2 id="irt-results">Main results</h2><p>The 2PL model achieved better fit according to log loss, AIC, BIC and DIC. Ability estimates closely matched official WLE scores, with an approximate correlation of 0.990.</p></div></section>
+      <section class="case-study-section" aria-labelledby="irt-tech"><p class="section-number">05 / TECHNOLOGIES</p><div><h2 id="irt-tech">Technologies</h2><ul class="case-tech-list"><li>R</li><li>JAGS</li><li>rjags</li><li>Bayesian statistics</li><li>Item Response Theory</li></ul></div></section>
+      <section class="case-study-section" aria-labelledby="irt-type"><p class="section-number">06 / PROJECT TYPE</p><div><h2 id="irt-type">Project type</h2><p class="project-type">Individual academic project</p></div></section>
+    </div></div>
+    <section class="case-study-actions"><div class="shell"><a class="button button-acid" href="https://github.com/1fiocco/Statistical-Learning-2-project" target="_blank" rel="noreferrer noopener" aria-label="Open the Bayesian Item Response Theory repository on GitHub">GitHub repository <span aria-hidden="true">↗</span></a><a class="text-link light-link" href="../"><span aria-hidden="true">←</span> Back to all projects</a></div></section>
+  </main>
+  <footer><div class="shell footer-inner"><div><strong>Riccardo Pugliese</strong><span>Data Science · Data Management</span></div><nav aria-label="Footer navigation"><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a href="https://github.com/1fiocco" target="_blank" rel="noreferrer noopener">GitHub</a><a href="https://www.linkedin.com/in/riccardo-pugliese-9594b8298/" target="_blank" rel="noreferrer noopener">LinkedIn</a></nav><span>© 2026</span></div></footer>
+</body></html>

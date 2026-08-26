@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: enriching approximately 21,000 DreamBank reports and comparing Qwen3 configurations.">
+  <link rel="canonical" href="https://1fiocco.github.io/projects/dreambank/">
+  <meta property="og:title" content="DreamBank Enrichment &amp; Generation | Riccardo Pugliese">
+  <meta property="og:description" content="Case study: enriching approximately 21,000 DreamBank reports and comparing Qwen3 configurations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://1fiocco.github.io/projects/dreambank/">
+  <meta property="og:image" content="https://1fiocco.github.io/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DreamBank Enrichment &amp; Generation | Riccardo Pugliese">
+  <meta name="twitter:description" content="Case study: enriching approximately 21,000 DreamBank reports and comparing Qwen3 configurations.">
+  <meta name="twitter:image" content="https://1fiocco.github.io/og.png">
+  <title>DreamBank Enrichment &amp; Generation | Riccardo Pugliese</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css">
+</head><body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner"><a class="wordmark" href="../../">Riccardo Pugliese</a><nav class="desktop-nav" aria-label="Main navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a></nav><a class="header-cta" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a><details class="mobile-menu"><summary>Menu</summary><nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a class="mobile-menu-cv" href="../../riccardo-pugliese-cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a></nav></details></div></header>
+  <main id="main" class="case-study-page">
+    <section class="page-hero case-study-hero"><div class="shell"><p class="eyebrow"><span></span> Case study</p><div class="page-title-grid"><div><p class="case-study-category">Natural Language Processing</p><h1>DreamBank Enrichment &amp; Generation</h1></div><p>Worked with approximately 21,000 DreamBank reports, enriching them with emotion, topic and demographic metadata before comparing four Qwen3-1.7B-Base configurations.</p></div></div></section>
+    <div class="case-study-body"><div class="shell">
+      <section class="case-study-section" aria-labelledby="dreambank-problem"><p class="section-number">01 / RESEARCH QUESTION</p><div><h2 id="dreambank-problem">Research question</h2><p>How do fine-tuning and enriched metadata affect language-model performance across four Qwen3-1.7B-Base configurations trained on DreamBank reports?</p></div></section>
+      <section class="case-study-section" aria-labelledby="dreambank-data"><p class="section-number">02 / DATA</p><div><h2 id="dreambank-data">Data</h2><p>The project used approximately 21,000 DreamBank reports. The reports were enriched with emotion, topic and demographic metadata.</p></div></section>
+      <section class="case-study-section" aria-labelledby="dreambank-approach"><p class="section-number">03 / TECHNICAL APPROACH</p><div><h2 id="dreambank-approach">Technical approach</h2><p>A RoBERTa-based model classified emotions, while BERTopic identified 25 topics. Four Qwen3-1.7B-Base configurations were compared, using QLoRA for parameter-efficient fine-tuning.</p></div></section>
+      <figure class="case-visual" aria-labelledby="dreambank-visual-title" aria-describedby="dreambank-visual-description dreambank-visual-caption">
+        <div class="case-visual-heading"><div><p class="case-visual-kicker">Workflow</p><h3 id="dreambank-visual-title">From enriched reports to model evaluation</h3></div><p class="case-visual-description" id="dreambank-visual-description">Dream reports move through emotion, topic and demographic enrichment before four base-model configurations are fine-tuned and evaluated.</p></div>
+        <ol class="pipeline-steps pipeline-steps--four">
+          <li><span class="pipeline-step-number">01</span><strong>≈21,000 reports</strong><span>DreamBank corpus</span></li>
+          <li><span class="pipeline-step-number">02</span><strong>Enrichment</strong><span>RoBERTa-based emotion labels · 25 BERTopic themes · demographic metadata</span></li>
+          <li><span class="pipeline-step-number">03</span><strong>Four configurations</strong><span>Qwen3-1.7B-Base · QLoRA fine-tuning</span></li>
+          <li><span class="pipeline-step-number">04</span><strong>Evaluation</strong><span>Token-level negative log-likelihood · perplexity</span></li>
+        </ol>
+        <div class="visual-conclusion" aria-label="Qualitative conclusions"><p>Fine-tuning improved performance.</p><p>Metadata added limited further improvement.</p></div>
+        <figcaption id="dreambank-visual-caption">Verified enrichment, fine-tuning and evaluation workflow; no unverified model scores are shown.</figcaption>
+      </figure>
+      <section class="case-study-section" aria-labelledby="dreambank-results"><p class="section-number">04 / MAIN RESULTS</p><div><h2 id="dreambank-results">Main results</h2><p>Fine-tuning reduced token-level negative log-likelihood and perplexity. Adding metadata produced limited additional improvement.</p></div></section>
+      <section class="case-study-section" aria-labelledby="dreambank-tech"><p class="section-number">05 / TECHNOLOGIES</p><div><h2 id="dreambank-tech">Technologies</h2><ul class="case-tech-list"><li>Python</li><li>Qwen3</li><li>QLoRA</li><li>Hugging Face</li><li>RoBERTa</li><li>BERTopic</li></ul></div></section>
+      <section class="case-study-section" aria-labelledby="dreambank-type"><p class="section-number">06 / PROJECT TYPE</p><div><h2 id="dreambank-type">Project type</h2><p class="project-type">Collaborative academic project</p></div></section>
+    </div></div>
+    <section class="case-study-actions"><div class="shell"><a class="button button-acid" href="https://github.com/1fiocco/Statistical-Machine-Learning" target="_blank" rel="noreferrer noopener" aria-label="Open the DreamBank Enrichment and Generation repository on GitHub">GitHub repository <span aria-hidden="true">↗</span></a><a class="text-link light-link" href="../"><span aria-hidden="true">←</span> Back to all projects</a></div></section>
+  </main>
+  <footer><div class="shell footer-inner"><div><strong>Riccardo Pugliese</strong><span>Data Science · Data Management</span></div><nav aria-label="Footer navigation"><a href="../../about/">About</a><a href="../" aria-current="page">Projects</a><a href="../../contact/">Contact</a><a href="https://github.com/1fiocco" target="_blank" rel="noreferrer noopener">GitHub</a><a href="https://www.linkedin.com/in/riccardo-pugliese-9594b8298/" target="_blank" rel="noreferrer noopener">LinkedIn</a></nav><span>© 2026</span></div></footer>
+</body></html>
